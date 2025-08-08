@@ -22,6 +22,12 @@
             </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
+
+        <addUniqueConstraint
+            columnNames="name, user_id"
+            constraintName="uc__schema_definition__name__user_id"
+            tableName="schema_definition"
+        />
     </changeSet>
 
     <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->

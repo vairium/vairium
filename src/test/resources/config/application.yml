@@ -15,7 +15,7 @@
 
 spring:
   application:
-    name: vairium
+    name: vairoxa
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: test
@@ -33,13 +33,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: vairium-task-
+      thread-name-prefix: vairoxa-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: vairium-scheduling-
+      thread-name-prefix: vairoxa-scheduling-
       pool:
         size: 20
   thymeleaf:
@@ -56,9 +56,9 @@ server:
 # ===================================================================
 jhipster:
   clientApp:
-    name: 'vairiumApp'
+    name: 'vairoxaApp'
   mail:
-    from: vairium@localhost.com
+    from: vairoxa@localhost.com
     base-url: http://127.0.0.1:8080
   logging:
     # To test json console appender

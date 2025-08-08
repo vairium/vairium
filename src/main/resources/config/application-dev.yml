@@ -18,7 +18,7 @@ logging:
     ROOT: DEBUG
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
-    tech.siloxa.vairium: DEBUG
+    tech.siloxa.vairoxa: DEBUG
 
 management:
   health:
@@ -37,7 +37,7 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/vairium
+    url: jdbc:postgresql://localhost:5432/vairoxa
     username: vm_dbuser
     password: wyxkrs6772PmxNyC
     hikari:

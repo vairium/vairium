@@ -1,12 +1,12 @@
 # This configuration is intended for development purpose, it's **your** responsibility to harden it for production
 version: '3.8'
 services:
-  vairium-postgresql:
+  vairoxa-postgresql:
     image: postgres:14.5
     # volumes:
-    #   - ~/volumes/jhipster/vairium/postgresql/:/var/lib/postgresql/data/
+    #   - ~/volumes/jhipster/vairoxa/postgresql/:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_DB=vairium
+      - POSTGRES_DB=vairoxa
       - POSTGRES_USER=vm_dbuser
       - POSTGRES_PASSWORD=wyxkrs6772PmxNyC
     # If you want to expose these ports outside your dev PC,

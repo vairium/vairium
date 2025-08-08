@@ -12,9 +12,9 @@ redis-cli \
     --cluster-replicas 1 \
     --cluster-yes \
     --cluster create \
-        $(host vairium-redis|awk '{print $4}'):6379 \
-        $(host vairium-redis-1|awk '{print $4}'):6379 \
-        $(host vairium-redis-2|awk '{print $4}'):6379 \
-        $(host vairium-redis-3|awk '{print $4}'):6379 \
-        $(host vairium-redis-4|awk '{print $4}'):6379 \
-        $(host vairium-redis-5|awk '{print $4}'):6379
+        $(host vairoxa-redis|awk '{print $4}'):6379 \
+        $(host vairoxa-redis-1|awk '{print $4}'):6379 \
+        $(host vairoxa-redis-2|awk '{print $4}'):6379 \
+        $(host vairoxa-redis-3|awk '{print $4}'):6379 \
+        $(host vairoxa-redis-4|awk '{print $4}'):6379 \
+        $(host vairoxa-redis-5|awk '{print $4}'):6379

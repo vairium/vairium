@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "authenticationType": "jwt",
-    "baseName": "vairium",
+    "baseName": "vairoxa",
     "blueprints": [],
     "buildTool": "maven",
     "cacheProvider": "redis",
@@ -30,7 +30,7 @@
     "microfrontends": [],
     "nativeLanguage": "en",
     "otherModules": [],
-    "packageName": "tech.siloxa.vairium",
+    "packageName": "tech.siloxa.vairoxa",
     "pages": [],
     "prodDatabaseType": "postgresql",
     "reactive": false,

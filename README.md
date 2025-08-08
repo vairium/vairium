@@ -1,4 +1,4 @@
-# vairium
+# vairoxa
 
 This application was generated using JHipster 7.9.4, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.9.4](https://www.jhipster.tech/documentation-archive/v7.9.4).
 
@@ -39,7 +39,7 @@ docker-compose -f src/main/docker/jhipster-control-center.yml up
 
 ### Packaging as jar
 
-To build the final jar and optimize the vairium application for production, run:
+To build the final jar and optimize the vairoxa application for production, run:
 
 ```
 ./mvnw -Pprod clean verify
