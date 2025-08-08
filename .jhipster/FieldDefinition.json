@@ -1,0 +1,53 @@
+{
+  "applications": "*",
+  "changelogDate": "20250808105816",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "field_definition",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataType",
+      "fieldType": "DataType",
+      "fieldValues": "STRING,INTEGER,LONG,FLOAT,DOUBLE,BOOLEAN,DATE"
+    },
+    {
+      "fieldName": "isRequired",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isUnique",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "defaultValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "relationSchemaId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "relationType",
+      "fieldType": "RelationType",
+      "fieldValues": "ONE_TO_ONE,ONE_TO_MANY,MANY_TO_ONE,MANY_TO_MANY"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "FieldDefinition",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "schemaDefinition",
+      "otherEntityRelationshipName": "fieldDefinition",
+      "relationshipName": "schemaDefinition",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

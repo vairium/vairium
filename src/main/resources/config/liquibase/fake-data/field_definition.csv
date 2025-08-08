@@ -1,0 +1,11 @@
+id;name;data_type;is_required;is_unique;default_value;relation_schema_id;relation_type
+1;yellow;LONG;false;false;coherent;72543;ONE_TO_MANY
+2;copy Future;DATE;false;true;neural deposit;98230;MANY_TO_MANY
+3;Car invoice;DATE;false;true;olive;66540;ONE_TO_ONE
+4;Open-architected Latvian Berkshire;FLOAT;true;false;Pennsylvania Ball withdrawal;49056;MANY_TO_MANY
+5;Customer;LONG;false;false;orchestration blue withdrawal;73478;ONE_TO_ONE
+6;Credit;BOOLEAN;false;true;multi-state;95940;MANY_TO_MANY
+7;withdrawal;BOOLEAN;true;true;Team-oriented Branding Serbia;4703;ONE_TO_ONE
+8;architect Developer Toys;STRING;true;false;calculate;15471;ONE_TO_ONE
+9;Hat Handcrafted Metal;BOOLEAN;false;false;generation Licensed;56070;MANY_TO_MANY
+10;attitude-oriented alarm Accounts;BOOLEAN;true;true;withdrawal Granite grey;91006;ONE_TO_MANY

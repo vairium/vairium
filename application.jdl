@@ -1,0 +1,34 @@
+enum DataType {
+    STRING
+    INTEGER
+    LONG
+    FLOAT
+    DOUBLE
+    BOOLEAN
+    DATE
+}
+
+enum RelationType {
+    ONE_TO_ONE
+    ONE_TO_MANY
+    MANY_TO_ONE
+    MANY_TO_MANY
+}
+
+entity SchemaDefinition {
+    name String
+}
+
+entity FieldDefinition {
+    name String
+    dataType DataType
+    isRequired Boolean
+    isUnique Boolean
+    defaultValue String
+    relationSchemaId Long
+    relationType RelationType
+}
+
+relationship OneToMany {
+    SchemaDefinition to FieldDefinition
+}

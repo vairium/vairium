@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20250808105815",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "schema_definition",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SchemaDefinition",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "fieldDefinition",
+      "otherEntityRelationshipName": "schemaDefinition",
+      "relationshipName": "fieldDefinition",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -81,6 +81,9 @@ public class CacheConfiguration {
             createCache(cm, tech.siloxa.vairium.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, tech.siloxa.vairium.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, tech.siloxa.vairium.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, tech.siloxa.vairium.domain.SchemaDefinition.class.getName(), jcacheConfiguration);
+            createCache(cm, tech.siloxa.vairium.domain.SchemaDefinition.class.getName() + ".fieldDefinitions", jcacheConfiguration);
+            createCache(cm, tech.siloxa.vairium.domain.FieldDefinition.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
