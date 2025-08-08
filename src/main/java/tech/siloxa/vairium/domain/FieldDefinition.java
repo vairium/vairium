@@ -34,10 +34,10 @@ public class FieldDefinition implements Serializable {
     private DataType dataType;
 
     @Column(name = "is_required")
-    private Boolean isRequired;
+    private Boolean isRequired = false;
 
     @Column(name = "is_unique")
-    private Boolean isUnique;
+    private Boolean isUnique = false;
 
     @Column(name = "default_value")
     private String defaultValue;
@@ -50,7 +50,7 @@ public class FieldDefinition implements Serializable {
     private RelationType relationType;
 
     @ManyToOne
-    @JsonIgnoreProperties(value = { "fieldDefinitions" }, allowSetters = true)
+    @JsonIgnoreProperties(value = { "fieldDefinitions", "user" }, allowSetters = true)
     private SchemaDefinition schemaDefinition;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here

@@ -1,0 +1,14 @@
+package tech.siloxa.vairium.service;
+
+import tech.siloxa.vairium.domain.User;
+
+public abstract class AbstractSchemaService {
+
+    protected String getSchemaName(String schemaName, User currentUser) {
+        return schemaName + "_" + currentUser.getId();
+    }
+
+    protected String sanitize(String input) {
+        return input.replaceAll("[^a-zA-Z0-9_]", "").toLowerCase();
+    }
+}

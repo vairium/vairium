@@ -1,0 +1,46 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+version: '3.8'
+services:
+  vairium-postgresql:
+    image: postgres:14.5
+    # volumes:
+    #   - ~/volumes/jhipster/vairium/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=vairium
+      - POSTGRES_USER=vm_dbuser
+      - POSTGRES_PASSWORD=wyxkrs6772PmxNyC
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:5432:5432
+
+  vairium-redis:
+    image: redis:6.2.7
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:6379:6379
+
+  vairium-elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.4
+    # volumes:
+    #   - ~/volumes/jhipster/vairium/elasticsearch/:/usr/share/elasticsearch/data/
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:9200:9200
+      - 127.0.0.1:9300:9300
+    environment:
+      - 'xpack.security.enabled=false'
+      - 'discovery.type=single-node'
+      - 'bootstrap.memory_lock=true'
+      - 'ES_JAVA_OPTS=-Xms512m -Xmx512m'
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK

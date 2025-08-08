@@ -29,11 +29,14 @@ public class SchemaDefinition implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "schemaDefinition")
+    @OneToMany(mappedBy = "schemaDefinition", cascade = CascadeType.PERSIST)
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @org.springframework.data.annotation.Transient
     @JsonIgnoreProperties(value = { "schemaDefinition" }, allowSetters = true)
     private Set<FieldDefinition> fieldDefinitions = new HashSet<>();
+
+    @ManyToOne
+    private User user;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
@@ -91,6 +94,19 @@ public class SchemaDefinition implements Serializable {
     public SchemaDefinition removeFieldDefinition(FieldDefinition fieldDefinition) {
         this.fieldDefinitions.remove(fieldDefinition);
         fieldDefinition.setSchemaDefinition(null);
+        return this;
+    }
+
+    public User getUser() {
+        return this.user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public SchemaDefinition user(User user) {
+        this.setUser(user);
         return this;
     }
 

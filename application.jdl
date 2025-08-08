@@ -32,3 +32,7 @@ entity FieldDefinition {
 relationship OneToMany {
     SchemaDefinition to FieldDefinition
 }
+
+relationship  ManyToOne {
+    SchemaDefinition to User
+}

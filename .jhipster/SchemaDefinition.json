@@ -21,6 +21,12 @@
       "otherEntityRelationshipName": "schemaDefinition",
       "relationshipName": "fieldDefinition",
       "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "schemaDefinition",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
     }
   ],
   "service": "no"

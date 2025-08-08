@@ -6,9 +6,9 @@ services:
     # volumes:
     #   - ~/volumes/jhipster/vairium/postgresql/:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=vairium
-      - POSTGRES_PASSWORD=
-      - POSTGRES_HOST_AUTH_METHOD=trust
+      - POSTGRES_DB=vairium
+      - POSTGRES_USER=vm_dbuser
+      - POSTGRES_PASSWORD=wyxkrs6772PmxNyC
     # If you want to expose these ports outside your dev PC,
     # remove the "127.0.0.1:" prefix
     ports:
